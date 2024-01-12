@@ -987,6 +987,82 @@ button, a { transition: var(--transition); }
 /**
  * responsive for larger than 600px screen
  */
+ @media (min-width: 400px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-2: 1.875rem;
+
+  }
+
+
+  .container {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+
+  .has-scrollbar {
+    gap: 25px;
+    margin-inline: -25px;
+    padding-inline: 25px;
+    scroll-padding-left: 25px;
+  }
+
+  .has-scrollbar > li { min-width: calc(50% - 12.5px); }
+
+
+
+  /**
+   * SERVICE
+   */
+
+  .service-list > li { width: calc(50% - 15px); }
+
+
+
+  /**
+   * PROPERTY
+   */
+
+  .property .container {
+    max-width: unset;
+    padding-inline: 25px;
+  }
+
+
+
+  /**
+   * CTA
+   */
+
+  .cta-card { --fs-2: 1.5rem; }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .footer-link-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .map{
+    width: 250px;
+    height: 160px;
+  }
+
+}
+
 
 @media (min-width: 600px) {
 
