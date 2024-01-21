@@ -593,6 +593,20 @@ button, a { transition: var(--transition); }
   color: black;
 }
 
+@media (max-width: 768px) {
+  .counter-sec {
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    margin-bottom: 20px; /* Add margin between columns for better spacing on smaller screens */
+  }
+}
+
 
   /* SERVICE */
 
@@ -980,10 +994,24 @@ button, a { transition: var(--transition); }
 .copyright a:is(:hover, :focus) { color: var(--orange-soda); }
 
 
-.map{
+/* .map{
   width: 500px; height: 300px;
+} */
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (you can adjust this based on your preference) */
+  overflow: hidden;
 }
 
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
   /* MEDIA QUERIES */
 
