@@ -4,7 +4,7 @@
 
   --dark-jungle-green: hsl(188, 63%, 7%);
   --prussian-blue: hsl(200, 69%, 14%);
-  --raisin-black-1: hsl(227, 29%, 13%);
+  --raisin-black-1: hsl(227, 29%, 9%);
   --raisin-black-2: hsl(229, 17%, 19%);
   --yellow-green: hsl(89, 72%, 45%);
   --orange-soda: hsl(9, 100%, 62%);
@@ -301,7 +301,10 @@ button, a { transition: var(--transition); }
   padding: 4px 15px;
 }
 
-.header-top-btn:is(:hover, :focus) { --orange-soda: hsl(7, 72%, 46%); }
+.header-top-btn:hover, .header-top-btn:focus{ 
+  --orange-soda: hsl(7, 72%, 46%);
+  text-decoration:none;
+}
 
 .header-bottom {
   background: var(--white);
@@ -938,7 +941,7 @@ button, a { transition: var(--transition); }
   transition: var(--transition);
 }
 
-.contact-link:is(:hover, :focus) span { color: var(--orange-soda); }
+.contact-link:is(:hover) span { color: var(--orange-soda); text-decoration: none; }
 
 .social-list {
   display: flex;
@@ -960,7 +963,7 @@ button, a { transition: var(--transition); }
   padding-block: 10px;
 }
 
-.footer-link:is(:hover, :focus) { color: var(--orange-soda); }
+.footer-link:is(:hover, :focus) { color: var(--orange-soda); text-decoration: none;}
 
 .footer-bottom {
   background: var(--raisin-black-2);

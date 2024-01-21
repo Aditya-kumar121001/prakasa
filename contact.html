@@ -22,6 +22,8 @@
       type="image/svg+xml"
     />
 
+    <script src="./assets/js/contact.js"></script>
+
     <title>Contact Us</title>
   </head>
   <body>
@@ -34,7 +36,7 @@
         <div class="col-md-8">
           <div class="form h-100">
             <h2 class="section-title mb-5">Send us a message</h2>
-            <form class="mb-5" method="post" id="contactForm" name="contactForm">
+            <form class="mb-5" method="#" id="contactForm" name="contactForm" onsubmit="return submitForm()">
               <div class="row">
                 <div class="col-md-6 form-group mb-5">
                   <label for="" class="col-form-label">Name *</label>
@@ -78,18 +80,18 @@
                   style="width: 200px; margin-bottom: 20px;"
                 />
               </a>
-            <ul class="list-unstyled" >
-              <li class="d-flex contactLi">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center contactLi">
                 <span  class="wrap-icon icon-room mr-3 mt-0"><ion-icon name="location-outline"></ion-icon>
                 </span>
                 <span class="text" style="color: black;">Spazedge B block 3rd floor, 334 unit Sohna road, sector 4 
                 </span>
               </li>
-              <li class="d-flex contactLi">
+              <li class="d-flex align-items-center contactLi" >
                 <span class="wrap-icon icon-phone mr-3 mt-0"><ion-icon name="call-outline"></ion-icon></span>
                 <span class="text" style="color: black;">124-4292153, +91-730380179</span>
               </li>
-              <li class="d-flex contactLi">
+              <li class="d-flex align-items-center contactLi" >
                 <span class="wrap-icon icon-envelope mr-3 mt-0"><ion-icon name="mail-outline"></ion-icon></span>
                 <span class="text" style="color: black;">prakasainfra@gmail.com</span>
               </li>
@@ -116,6 +118,8 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/jquery.validate.min.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <script src="./assets/js/contact.js"></script>
 
   </body>
 </html>
